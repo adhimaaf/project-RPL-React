@@ -4,7 +4,7 @@ export default function LoginPage() {
       <div className="w-[968px] h-[785px] p-20 bg-amber-400 rounded-[40px] flex-col justify-between items-center inline-flex">
         <div className="p-2.5 flex-col justify-start items-start gap-2.5 flex">
           <div className="text-center text-neutral-700 text-5xl font-bold font-['Bebas Neue']">
-            MASUk ke akun anda
+            Masuk ke akun anda
           </div>
         </div>
         <div className="self-stretch h-[246px] p-2.5 flex-col justify-center items-center gap-4 flex">

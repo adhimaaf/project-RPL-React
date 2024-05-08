@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Breadcrumb from "@/components/contents/Breadcrumb";
 import NavBar from "@/components/nav/NavBar";
 import Jumbotron from "@/components/contents/Jumbotron";
 import CompanyProfile from "@/components/contents/CompanyProfile";
@@ -20,43 +19,12 @@ export default function RootLayout({ children }) {
     <html>
       <body className="overflow-x-hidden">
         <div id="root">
-          <div className="w-[1920px] h-[1080px] p-2.5 bg-white justify-center items-center gap-2.5 inline-flex">
-            <div className="w-[800ppx] h-[500px] p-20 bg-amber-400 rounded-[40px] flex-col justify-between items-center inline-flex">
-              <div className="p-2.5 flex-col justify-start items-start gap-2.5 flex">
-                <div className="text-center text-neutral-700 text-5xl font-[BebasNeue]">
-                  Masuk ke akun anda
-                </div>
-              </div>
-              <div className="self-stretch h-[246px] p-2.5 flex-col justify-center items-center gap-4 flex">
-                <input
-                  type="text"
-                  id="accout"
-                  name="account"
-                  placeholder="email"
-                  className="self-stretch h-[64px] bg-white rounded-[20px]"
-                />
-                <input
-                  type="password"
-                  id="accout"
-                  name="account"
-                  placeholder="email"
-                  className="self-stretch h-[64px] bg-white rounded-[20px]"
-                />
-              </div>
-              <div className="self-stretch h-[220px] p-2.5 flex-col justify-center items-center gap-4 flex">
-                <div className="self-stretch h-[105px] relative">
-                  <button className="w-full left-0 top-0 absolute bg-pink-400 text-center text-neutral-100 text-2xl font-[BebasNeue] rounded-[20px]">
-                    Login
-                  </button>
-                </div>
-                <div className="self-stretch p-2.5 justify-start items-center gap-2.5 inline-flex">
-                  <div className="text-center text-neutral-700 text-[16px] font-normal font-['Montserrat']">
-                    Belum punya akun?
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <NavBar></NavBar>
+          <Jumbotron></Jumbotron>
+          <CompanyProfile></CompanyProfile>
+          <ServicesList></ServicesList>
+          <Testimonies></Testimonies>
+          <Footer></Footer>
         </div>
       </body>
     </html>
