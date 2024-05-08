@@ -1,9 +1,22 @@
-import Image from "next/image";
+import CompanyProfile from "@/components/contents/CompanyProfile";
+import Jumbotron from "@/components/contents/Jumbotron";
+import ServicesList from "@/components/contents/ServicesList";
+import Testimonies from "@/components/contents/Testimonies";
+import Footer from "@/components/nav/Footer";
+import NavBar from "@/components/nav/NavBar";
+import React from "react";
 
-export default function Home() {
+function page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      landing pg
-    </main>
+    <div>
+      <NavBar></NavBar>
+      <Jumbotron></Jumbotron>
+      <CompanyProfile></CompanyProfile>
+      <ServicesList></ServicesList>
+      <Testimonies></Testimonies>
+      <Footer></Footer>
+    </div>
   );
 }
+
+export default page;

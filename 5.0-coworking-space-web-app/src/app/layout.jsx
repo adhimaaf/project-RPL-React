@@ -18,14 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <body className="overflow-x-hidden">
-        <div id="root">
-          <NavBar></NavBar>
-          <Jumbotron></Jumbotron>
-          <CompanyProfile></CompanyProfile>
-          <ServicesList></ServicesList>
-          <Testimonies></Testimonies>
-          <Footer></Footer>
-        </div>
+        <div id="root">{children}</div>
       </body>
     </html>
   );

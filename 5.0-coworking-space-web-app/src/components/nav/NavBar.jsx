@@ -46,10 +46,7 @@ export default function NavBar() {
           </a>
         </div>
         <div className="grow shrink basis-0 h-[57px] justify-end items-center flex gap-[40px]">
-          <a
-            className="justify-start items-center gap-1 flex"
-            href="/src/app/layout.jsx"
-          >
+          <a className="justify-start items-center gap-1 flex" href="/login">
             <div className="text-neutral-700 text-2xl font-[BebasNeue]">
               login
             </div>
